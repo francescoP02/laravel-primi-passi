@@ -51,5 +51,17 @@ Route::get('/', function () {
         ],
     ];
     return view('home', $data);
-});
+})->name('home');
+
+Route::get('/about-us', function() {
+    return view('about');
+})->name('about');
+
+Route::get('/tickets', function() {
+    return view('ticket');
+})->name('ticket');
+
+Route::get('/activities', function() {
+    return view('activity');
+})->name('activity');
 
