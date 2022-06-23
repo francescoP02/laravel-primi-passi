@@ -1,0 +1,12 @@
+body {
+    text-align: center;
+    background-color: cornflowerblue;
+}
+
+ul {
+    list-style: none;
+}
+
+.ms-list {
+    padding: 4rem 0 0;
+}

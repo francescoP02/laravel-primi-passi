@@ -14,6 +14,42 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $data = [
+        'name' => 'Francesco',
+        'lastname' => 'Partipilo',
+        'results' => [
+            [
+                'city' => 'Bari',
+                'abbreviation' => 'BA',
+                'capoluogo' => true,
+            ],
+            [
+                'city' => 'Brindisi',
+                'abbreviation' => 'BR',
+                'capoluogo' => false,
+            ],
+            [
+                'city' => 'Taranto',
+                'abbreviation' => 'TA',
+                'capoluogo' => false,
+            ],
+            [
+                'city' => 'Lecce',
+                'abbreviation' => 'LE',
+                'capoluogo' => false,
+            ],
+            [
+                'city' => 'Foggia',
+                'abbreviation' => 'FG',
+                'capoluogo' => false,
+            ],
+            [
+                'city' => 'Barletta-Andria-Trani',
+                'abbreviation' => 'BAT',
+                'capoluogo' => false,
+            ],
+        ],
+    ];
+    return view('home', $data);
 });
 
